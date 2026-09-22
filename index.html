@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AAVI | Empowering Women to Rise</title>
+
+<meta name="description" content="AAVI is a women-focused career and talent platform connecting women with meaningful career opportunities and helping companies discover women talent.">
+
+<style>
+
+:root {
+    --purple: #51087E;
+    --purple-dark: #35104D;
+    --purple-soft: #E9D8F5;
+    --yellow: #FFC928;
+    --cream: #FFF9EF;
+    --white: #FFFFFF;
+    --text: #25202A;
+    --muted: #6D6572;
+    --border: #E6DDEB;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    background: var(--purple-soft);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--purple);
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--yellow);
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-button {
+    background: var(--purple);
+    color: white;
+    padding: 11px 20px;
+    border-radius: 25px;
+}
+
+/* HERO */
+
+.hero {
+    background: var(--purple-soft);
+    padding: 90px 0 100px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: var(--purple);
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    color: var(--purple-dark);
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background: var(--purple);
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--purple);
+    border: 2px solid var(--purple);
+}
+
+/* HERO VISUAL */
+
+.hero-card {
+    background: white;
+    border-radius: 30px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(81,8,126,0.12);
+}
+
+.sun {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: var(--yellow);
+    position: relative;
+}
+
+.sun:before,
+.sun:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--purple);
+}
+
+.sun:before {
+    width: 8px;
+    height: 80px;
+    bottom: 30px;
+}
+
+.sun:after {
+    width: 120px;
+    height: 8px;
+    bottom: 30px;
+}
+
+.a-mark {
+    position: absolute;
+    font-size: 120px;
+    font-weight: 900;
+    color: var(--purple);
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* SECTION */
+
+section {
+    padding: 90px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 55px;
+}
+
+.section-heading .eyebrow {
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    color: var(--purple-dark);
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+/* OPPORTUNITIES */
+
+.opportunities {
+    background: var(--cream);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
+
+.card-number {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--yellow);
+    background: var(--purple);
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    color: var(--purple-dark);
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.card p {
+    color: var(--muted);
+}
+
+/* HOW AAVI WORKS */
+
+.how {
+    background: var(--purple);
+    color: white;
+}
+
+.how .section-heading h2,
+.how .section-heading p,
+.how .eyebrow {
+    color: white;
+}
+
+.how-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.how-card {
+    background: white;
+    color: var(--text);
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.how-card h3 {
+    color: var(--purple);
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.how-card ul {
+    list-style: none;
+}
+
+.how-card li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.how-card li:last-child {
+    border-bottom: none;
+}
+
+/* SERVICES */
+
+.services {
+    background: white;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.service {
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+}
+
+.service h3 {
+    color: var(--purple);
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.service p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* FORMS */
+
+.register {
+    background: var(--purple-soft);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.form-card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.form-card h3 {
+    color: var(--purple-dark);
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.form-card > p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-submit {
+    width: 100%;
+    border: none;
+    background: var(--purple);
+    color: white;
+    padding: 14px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* CTA */
+
+.cta {
+    background: var(--cream);
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 45px;
+    color: var(--purple-dark);
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: auto auto 25px;
+    color: var(--muted);
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--purple-dark);
+    color: white;
+    padding: 55px 0 30px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.footer-tagline {
+    margin-top: 8px;
+    color: #DCCDE5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 14px;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #C9B9D3;
+    font-size: 13px;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero-grid,
+    .form-grid,
+    .how-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-card {
+        min-height: 300px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .cta h2 {
+        font-size: 35px;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .form-card,
+    .how-card,
+    .card {
+        padding: 25px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<a href="#" class="logo">AAVI<span>.</span></a>
+
+<nav>
+<a href="#about">About</a>
+<a href="#opportunities">Opportunities</a>
+<a href="#clients">For Clients</a>
+<a href="#candidates">For Candidates</a>
+<a href="#register" class="nav-button">Register</a>
+</nav>
+
+</div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="about">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="eyebrow">WOMEN'S CAREER & TALENT PLATFORM</div>
+
+<h1>Empowering women to find their next chapter at work.</h1>
+
+<p>
+AAVI connects women with meaningful career opportunities
+and helps companies discover talented women professionals.
+</p>
+
+<div class="buttons">
+
+<a href="#candidates" class="btn btn-primary">
+I'm a Candidate
+</a>
+
+<a href="#clients" class="btn btn-secondary">
+I'm a Client
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="sun">
+
+<div class="a-mark">A</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- OPPORTUNITIES -->
+
+<section class="opportunities" id="opportunities">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">BUILT AROUND WOMEN'S CAREERS</div>
+
+<h2>Work opportunities shaped by possibility, not limitation.</h2>
+
+<p>
+Whether you're starting out, returning after a career break,
+or ready for your next move, AAVI is built around your journey.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+
+<div class="card-number">01</div>
+
+<h3>Women's Employment</h3>
+
+<p>
+Discover career opportunities with companies looking
+to hire talented women professionals.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">02</div>
+
+<h3>Return to Work</h3>
+
+<p>
+Reconnect with meaningful work after a career break,
+maternity leave, relocation or caregiving.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">03</div>
+
+<h3>Flexible Work</h3>
+
+<p>
+Find remote, hybrid, part-time and flexible roles
+that better fit your life and career goals.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- HOW AAVI WORKS -->
+
+<section class="how">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">HOW AAVI WORKS</div>
+
+<h2>Connecting the right people with the right opportunities.</h2>
+
+</div>
+
+
+<div class="how-grid">
+
+<div class="how-card" id="candidates">
+
+<h3>For Candidates</h3>
+
+<ul>
+
+<li>✓ Discover relevant job opportunities</li>
+
+<li>✓ Register your career profile</li>
+
+<li>✓ Explore flexible and remote work</li>
+
+<li>✓ Find return-to-work opportunities</li>
+
+<li>✓ Access career support</li>
+
+<li>✓ Connect with employers</li>
+
+</ul>
+
+</div>
+
+
+<div class="how-card" id="clients">
+
+<h3>For Clients</h3>
+
+<ul>
+
+<li>✓ Register your organization</li>
+
+<li>✓ Share your job openings</li>
+
+<li>✓ Reach women professionals</li>
+
+<li>✓ Build diverse talent pipelines</li>
+
+<li>✓ Hire for permanent or contract roles</li>
+
+<li>✓ Access curated women talent</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">WHAT AAVI OFFERS</div>
+
+<h2>Recruit. Connect. Grow.</h2>
+
+</div>
+
+
+<div class="service-grid">
+
+<div class="service">
+<h3>Women Talent</h3>
+<p>Connect employers with qualified women professionals.</p>
+</div>
+
+<div class="service">
+<h3>Job Posting</h3>
+<p>Reach a targeted women talent community.</p>
+</div>
+
+<div class="service">
+<h3>Diversity Hiring</h3>
+<p>Build a more diverse and inclusive workforce.</p>
+</div>
+
+<div class="service">
+<h3>Returnships</h3>
+<p>Reconnect experienced women with the workplace.</p>
+</div>
+
+<div class="service">
+<h3>Flexible Jobs</h3>
+<p>Remote, hybrid, part-time and flexible opportunities.</p>
+</div>
+
+<div class="service">
+<h3>Contract Hiring</h3>
+<p>Find talent for short-term and project requirements.</p>
+</div>
+
+<div class="service">
+<h3>Leadership Hiring</h3>
+<p>Identify experienced women for senior roles.</p>
+</div>
+
+<div class="service">
+<h3>AI Talent Matching</h3>
+<p>Match skills, experience and hiring requirements.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REGISTRATION -->
+
+<section class="register" id="register">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">JOIN AAVI</div>
+
+<h2>Let's start your next chapter.</h2>
+
+<p>
+Register your interest and we'll be in touch.
+</p>
+
+</div>
+
+
+<div class="form-grid">
+
+
+<!-- CANDIDATE FORM -->
+
+<div class="form-card">
+
+<h3>I'm a Candidate</h3>
+
+<p>
+Looking for your next opportunity?
+Tell us a little about yourself.
+</p>
+
+<form onsubmit="submitForm(event,'candidateMessage')">
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" required>
+</div>
+
+<div class="form-group">
+<label>Phone</label>
+<input type="tel">
+</div>
+
+<div class="form-group">
+<label>Experience</label>
+
+<select>
+
+<option>Fresher</option>
+<option>1–3 years</option>
+<option>4–7 years</option>
+<option>8–12 years</option>
+<option>12+ years</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Preferred Work Type</label>
+
+<select>
+
+<option>Full-time</option>
+<option>Part-time</option>
+<option>Remote</option>
+<option>Hybrid</option>
+<option>Flexible</option>
+
+</select>
+
+</div>
+
+<button class="form-submit">
+Register as Candidate
+</button>
+
+<p id="candidateMessage"></p>
+
+</form>
+
+</div>
+
+
+<!-- CLIENT FORM -->
+
+<div class="form-card">
+
+<h3>I'm a Client</h3>
+
+<p>
+Looking to hire talented women?
+Tell us about your hiring needs.
+</p>
+
+<form onsubmit="submitForm(event,'clientMessage')">
+
+<div class="form-group">
+<label>Company Name</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Contact Person</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" required>
+</div>
+
+<div class="form-group">
+<label>Phone</label>
+<input type="tel">
+</div>
+
+<div class="form-group">
+
+<label>Hiring Requirement</label>
+
+<textarea placeholder="Tell us about the roles you are hiring for"></textarea>
+
+</div>
+
+<button class="form-submit">
+Register as Client
+</button>
+
+<p id="clientMessage"></p>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Ready to rise?</h2>
+
+<p>
+Whether you're looking for your next opportunity
+or your next great hire, AAVI is here to help.
+</p>
+
+<div class="buttons" style="justify-content:center;">
+
+<a href="#candidates" class="btn btn-primary">
+Find Opportunities
+</a>
+
+<a href="#clients" class="btn btn-secondary">
+Hire Women Talent
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="footer-logo">AAVI<span style="color:#FFC928;">.</span></div>
+
+<div class="footer-tagline">
+Empowering Women to Rise
+</div>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="#about">About</a>
+<a href="#opportunities">Opportunities</a>
+<a href="#candidates">Candidates</a>
+<a href="#clients">Clients</a>
+<a href="#register">Register</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 AAVI. All rights reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+function submitForm(event, messageId) {
+
+event.preventDefault();
+
+const message = document.getElementById(messageId);
+
+message.innerHTML =
+"Thank you! Your information has been received. We'll be in touch soon.";
+
+message.style.color = "#51087E";
+message.style.fontWeight = "600";
+message.style.marginTop = "15px";
+
+event.target.reset();
+
+}
+
+</script>
+
+</body>
+</html>
