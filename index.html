@@ -1,53 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AAVI | Empowering Women to Rise</title>
+<title>AAVI – Empowering Women to Rise</title>
 
-<meta
-name="description"
-content="AAVI is a women-focused career and talent platform connecting women with meaningful career opportunities and helping companies discover women talent."
->
+<meta name="description" content="AAVI is a women-focused career and talent platform connecting women professionals with meaningful work opportunities and employers with talented women.">
 
 <style>
 
-/* =========================================================
+/* =========================
    AAVI BRAND COLORS
-========================================================= */
+========================= */
 
 :root {
-
     --purple: #51087E;
     --purple-dark: #35104D;
     --purple-soft: #E9D8F5;
-
     --yellow: #FFC928;
-
     --cream: #FFF9EF;
-
     --white: #FFFFFF;
-
     --text: #25202A;
-
     --muted: #6D6572;
-
     --border: #E6DDEB;
 }
 
 
-/* =========================================================
-   BASIC RESET
-========================================================= */
+/* =========================
+   RESET
+========================= */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -55,17 +42,14 @@ html {
 }
 
 body {
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--text);
-
     background: var(--white);
-
     line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
 }
 
 a {
@@ -73,1936 +57,1562 @@ a {
     color: inherit;
 }
 
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
 .container {
-
-    width: 90%;
-
-    max-width: 1180px;
-
-    margin: auto;
+    width: min(1180px, 92%);
+    margin: 0 auto;
 }
 
 
-/* =========================================================
+/* =========================
    HEADER
-========================================================= */
+========================= */
 
 header {
-
     background: var(--white);
-
-    padding: 14px 0;
-
+    border-bottom: 1px solid var(--border);
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
-
-    border-bottom: 1px solid #EEEEEE;
 }
 
-.nav {
-
+.navbar {
+    min-height: 82px;
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
+    gap: 30px;
 }
-
-
-/* ACTUAL AAVI LOGO */
 
 .logo-image {
-
     display: flex;
-
     align-items: center;
 }
 
 .logo-image img {
-
-    height: 55px;
-
+    height: 65px;
     width: auto;
-
     display: block;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
 }
 
-
-/* NAVIGATION */
-
-nav {
-
+.nav-links {
     display: flex;
-
-    gap: 28px;
-
     align-items: center;
-}
-
-nav a {
-
-    font-size: 14px;
-
+    gap: 28px;
+    font-size: 15px;
     font-weight: 600;
-
     color: var(--purple);
 }
 
-nav a:hover {
-
-    color: var(--purple-dark);
+.nav-links a:hover {
+    color: var(--yellow);
 }
 
-.nav-button {
-
+.nav-register {
     background: var(--purple);
-
-    color: white !important;
-
-    padding: 11px 22px;
-
-    border-radius: 25px;
+    color: var(--white);
+    padding: 11px 20px;
+    border-radius: 30px;
 }
 
-.nav-button:hover {
-
+.nav-register:hover {
     background: var(--purple-dark);
+    color: var(--white);
 }
 
 
-/* =========================================================
-   HERO / BANNER
-========================================================= */
+/* =========================
+   HERO
+========================= */
 
 .hero {
-
-    background: #FFFFFF;
-
+    background: var(--white);
     padding: 85px 0 95px;
 }
 
 .hero-grid {
-
     display: grid;
-
-    grid-template-columns: 1.1fr 0.9fr;
-
-    gap: 60px;
-
+    grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
-}
-
-
-/* HERO TEXT */
-
-.eyebrow {
-
-    color: var(--purple);
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-
-    font-size: 13px;
-
-    margin-bottom: 18px;
+    gap: 70px;
 }
 
 .hero h1 {
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: clamp(42px, 6vw, 68px);
-
-    line-height: 1.08;
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(46px, 5vw, 72px);
+    line-height: 1.05;
     color: var(--purple-dark);
-
     margin-bottom: 25px;
+    font-weight: 600;
 }
 
-.hero p {
+.hero-eyebrow {
+    color: var(--purple);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
 
-    font-size: 18px;
-
+.hero-text {
+    font-size: 19px;
     color: var(--muted);
-
     max-width: 600px;
-
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
-
-/* HERO BUTTONS */
-
-.buttons {
-
+.hero-buttons {
     display: flex;
-
-    gap: 14px;
-
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .btn {
-
-    display: inline-block;
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 14px 26px;
-
     border-radius: 30px;
-
     font-weight: 700;
-
+    border: none;
+    cursor: pointer;
     transition: 0.2s ease;
 }
 
-
-/* CANDIDATE BUTTON */
-
 .btn-primary {
-
     background: var(--purple);
-
-    color: white;
+    color: var(--white);
 }
 
 .btn-primary:hover {
-
     background: var(--purple-dark);
+    transform: translateY(-2px);
 }
 
-
-/* CLIENT BUTTON - YELLOW */
-
 .btn-client {
-
     background: var(--yellow);
-
     color: var(--purple-dark);
 }
 
 .btn-client:hover {
-
-    background: #F2B900;
+    background: #F3B900;
+    transform: translateY(-2px);
 }
 
 
-/* =========================================================
-   HERO LOGO AREA
-========================================================= */
+/* =========================
+   HERO LOGO
+   NO BOX / NO OUTLINE
+========================= */
 
 .hero-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 0 !important;
 
-    background: #FFFFFF;
-
-    border-radius: 30px;
-
-    min-height: 400px;
+    min-height: 480px;
+    padding: 20px;
 
     display: flex;
-
-    justify-content: center;
-
     align-items: center;
-
-    position: relative;
-
-    border: 1px solid #F0EAF3;
-
-    padding: 35px;
+    justify-content: center;
 }
 
-
-/* ACTUAL LOGO IN HERO */
-
 .hero-logo {
-
-    width: 80%;
-
-    max-width: 430px;
-
+    width: 100%;
+    max-width: 560px;
     height: auto;
 
     display: block;
+    margin: 0 auto;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
 }
 
 
-/* =========================================================
-   GENERAL SECTIONS
-========================================================= */
+/* =========================
+   SECTION HEADINGS
+========================= */
 
-section {
-
+.section {
     padding: 90px 0;
 }
 
-.section-heading {
-
-    text-align: center;
-
-    max-width: 720px;
-
-    margin: 0 auto 55px;
-}
-
-.section-heading .eyebrow {
-
+.section-label {
+    color: var(--purple);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
     margin-bottom: 12px;
 }
 
-.section-heading h2 {
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 42px;
-
-    line-height: 1.15;
-
+.section h2 {
+    font-family: Georgia, "Times New Roman", serif;
     color: var(--purple-dark);
-
-    margin-bottom: 15px;
+    font-size: clamp(36px, 4vw, 54px);
+    line-height: 1.1;
+    margin-bottom: 18px;
 }
 
-.section-heading p {
-
+.section-intro {
+    max-width: 680px;
     color: var(--muted);
+    font-size: 18px;
 }
 
 
-/* =========================================================
+/* =========================
    OPPORTUNITIES
-========================================================= */
+========================= */
 
 .opportunities {
-
     background: var(--cream);
 }
 
 .cards {
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
+    gap: 24px;
+    margin-top: 45px;
 }
 
 .card {
-
-    background: white;
-
-    padding: 35px;
-
-    border-radius: 20px;
-
+    background: var(--white);
+    padding: 32px;
+    border-radius: 18px;
     border: 1px solid var(--border);
 }
 
 .card-number {
-
-    font-size: 13px;
-
-    font-weight: 800;
-
+    font-size: 14px;
     color: var(--purple);
-
-    background: var(--yellow);
-
-    width: 42px;
-
-    height: 42px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: 50%;
-
-    margin-bottom: 25px;
-}
-
-.card h3 {
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    color: var(--purple-dark);
-
-    margin-bottom: 12px;
-
-    font-size: 22px;
-}
-
-.card p {
-
-    color: var(--muted);
-}
-
-
-/* =========================================================
-   HOW AAVI WORKS
-========================================================= */
-
-.how {
-
-    background: var(--purple);
-
-    color: white;
-}
-
-.how .section-heading h2 {
-
-    color: white;
-}
-
-.how .section-heading p {
-
-    color: white;
-}
-
-.how .eyebrow {
-
-    color: var(--yellow);
-}
-
-.how-grid {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 25px;
-}
-
-.how-card {
-
-    background: white;
-
-    color: var(--text);
-
-    padding: 40px;
-
-    border-radius: 25px;
-}
-
-.how-card h3 {
-
-    color: var(--purple);
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 26px;
-
+    font-weight: 700;
     margin-bottom: 18px;
 }
 
-.how-card ul {
-
-    list-style: none;
+.card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    color: var(--purple-dark);
+    margin-bottom: 14px;
 }
 
-.how-card li {
-
-    padding: 10px 0;
-
-    border-bottom: 1px solid var(--border);
-}
-
-.how-card li:last-child {
-
-    border-bottom: none;
+.card p {
+    color: var(--muted);
 }
 
 
-/* =========================================================
+/* =========================
+   HOW AAVI WORKS
+========================= */
+
+.how-aavi {
+    background: var(--purple);
+    color: var(--white);
+}
+
+.how-aavi .section-label {
+    color: var(--yellow);
+}
+
+.how-aavi h2 {
+    color: var(--white);
+}
+
+.how-aavi .section-intro {
+    color: #EBDCF2;
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.audience-card {
+    background: var(--white);
+    color: var(--text);
+    padding: 38px;
+    border-radius: 20px;
+}
+
+.audience-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--purple-dark);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.audience-card p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.audience-card ul {
+    padding-left: 20px;
+    color: var(--text);
+}
+
+.audience-card li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
    SERVICES
-========================================================= */
+========================= */
 
 .services {
-
-    background: white;
+    background: var(--white);
 }
 
-.service-grid {
-
+.services-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 18px;
+    margin-top: 45px;
 }
 
 .service {
-
     padding: 25px;
-
     border: 1px solid var(--border);
-
-    border-radius: 18px;
-
-    transition: 0.2s ease;
-}
-
-.service:hover {
-
-    border-color: var(--purple);
-
-    transform: translateY(-2px);
+    border-radius: 16px;
+    background: var(--white);
 }
 
 .service h3 {
-
     color: var(--purple);
-
-    margin-bottom: 8px;
-
     font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .service p {
-
     color: var(--muted);
-
     font-size: 14px;
 }
 
 
-/* =========================================================
+/* =========================
    REGISTRATION
-========================================================= */
+========================= */
 
 .register {
-
     background: var(--purple-soft);
 }
 
-.form-grid {
-
+.forms-grid {
     display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin-top: 45px;
 }
 
 .form-card {
-
-    background: white;
-
-    padding: 40px;
-
-    border-radius: 25px;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 35px;
 }
 
 .form-card h3 {
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
     color: var(--purple-dark);
-
-    font-size: 27px;
-
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .form-card > p {
-
     color: var(--muted);
-
     margin-bottom: 25px;
 }
 
 .form-group {
-
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .form-group label {
-
     display: block;
-
-    font-size: 13px;
-
+    font-size: 14px;
     font-weight: 700;
-
-    margin-bottom: 6px;
-
+    margin-bottom: 7px;
     color: var(--purple-dark);
 }
 
-input,
-select,
-textarea {
-
+.form-group input,
+.form-group select,
+.form-group textarea {
     width: 100%;
-
-    padding: 13px;
-
+    padding: 13px 14px;
     border: 1px solid var(--border);
-
-    border-radius: 10px;
-
-    font-size: 15px;
-
+    border-radius: 9px;
     font-family: inherit;
+    font-size: 15px;
+    background: var(--white);
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-
-    outline: none;
-
-    border-color: var(--purple);
-}
-
-textarea {
-
+.form-group textarea {
     min-height: 100px;
-
     resize: vertical;
 }
 
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--purple-soft);
+    border-color: var(--purple);
+}
+
 .form-submit {
-
     width: 100%;
-
-    border: none;
-
-    background: var(--purple);
-
-    color: white;
-
-    padding: 14px;
-
-    border-radius: 25px;
-
-    font-weight: 700;
-
-    cursor: pointer;
-}
-
-.form-submit:hover {
-
-    background: var(--purple-dark);
+    margin-top: 5px;
 }
 
 
-/* =========================================================
+/* =========================
    CTA
-========================================================= */
+========================= */
 
 .cta {
-
     background: var(--cream);
-
     text-align: center;
 }
 
 .cta h2 {
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 45px;
-
-    color: var(--purple-dark);
-
-    margin-bottom: 15px;
+    max-width: 800px;
+    margin: 0 auto 18px;
 }
 
 .cta p {
-
     max-width: 650px;
-
-    margin: auto auto 25px;
-
+    margin: 0 auto 28px;
     color: var(--muted);
 }
 
 
-/* =========================================================
+/* =========================
    FOOTER
-========================================================= */
+========================= */
 
 footer {
-
     background: var(--purple-dark);
-
-    color: white;
-
+    color: var(--white);
     padding: 55px 0 30px;
 }
 
 .footer-grid {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
 }
 
-.footer-logo-image {
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    background: var(--white);
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
 
+.footer-logo img {
     height: 55px;
-
     width: auto;
-
     display: block;
-
-    background: white;
-
-    padding: 5px 10px;
-
-    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
 }
 
 .footer-tagline {
-
-    margin-top: 10px;
-
-    color: #DCCDE5;
+    color: #EBDCF2;
+    max-width: 320px;
 }
 
-.footer-links {
-
-    display: flex;
-
-    gap: 25px;
-
-    flex-wrap: wrap;
-
-    align-items: center;
+.footer-column h4 {
+    color: var(--yellow);
+    margin-bottom: 15px;
 }
 
-.footer-links a {
-
-    color: white;
-
+.footer-column a {
+    display: block;
+    color: #EBDCF2;
+    margin-bottom: 9px;
     font-size: 14px;
 }
 
-.footer-links a:hover {
-
+.footer-column a:hover {
     color: var(--yellow);
 }
 
-.copyright {
-
+.footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.15);
-
-    margin-top: 40px;
-
+    margin-top: 45px;
     padding-top: 20px;
-
-    color: #C9B9D3;
-
+    color: #CDBBD7;
     font-size: 13px;
 }
 
 
-/* =========================================================
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.success-message {
+    display: none;
+    background: #F1E8F6;
+    color: var(--purple-dark);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================
    MOBILE
-========================================================= */
+========================= */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 
-    nav {
-
+    .nav-links {
         display: none;
     }
 
-    .hero-grid,
-    .form-grid,
-    .how-grid {
-
+    .hero-grid {
         grid-template-columns: 1fr;
-    }
-
-    .cards {
-
-        grid-template-columns: 1fr;
-    }
-
-    .service-grid {
-
-        grid-template-columns: 1fr 1fr;
+        gap: 35px;
     }
 
     .hero {
+        padding: 60px 0 70px;
+    }
 
-        padding: 60px 0;
+    .hero h1 {
+        font-size: 48px;
     }
 
     .hero-card {
-
-        min-height: 300px;
-    }
-
-    .section-heading h2 {
-
-        font-size: 34px;
-    }
-
-    .cta h2 {
-
-        font-size: 35px;
-    }
-
-    .footer-grid {
-
-        flex-direction: column;
+        min-height: 360px;
+        padding: 10px;
     }
 
     .hero-logo {
+        max-width: 460px;
+    }
 
-        width: 70%;
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .forms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
-    .service-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-
-        font-size: 42px;
-    }
-
-    .form-card,
-    .how-card,
-    .card {
-
-        padding: 25px;
+    .navbar {
+        min-height: 72px;
     }
 
     .logo-image img {
+        height: 55px;
+    }
 
-        height: 45px;
+    .nav-register {
+        display: none;
+    }
+
+    .hero {
+        padding: 45px 0 55px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
     }
 
     .hero-card {
+        min-height: 280px;
+    }
 
-        min-height: 250px;
+    .hero-logo {
+        max-width: 390px;
+    }
 
-        padding: 20px;
+    .section {
+        padding: 65px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .form-card {
+        padding: 25px;
     }
 }
 
 </style>
-
 </head>
 
 
 <body>
 
 
-<!-- =======================================================
+<!-- =========================
      HEADER
-======================================================= -->
+========================= -->
 
 <header>
 
-<div class="container nav">
+    <div class="container navbar">
 
+        <a href="#" class="logo-image">
+            <img src="aavi-logo.png"
+                 alt="AAVI - Empowering Women to Rise">
+        </a>
 
-<a href="#" class="logo-image">
+        <nav class="nav-links">
 
-<img
-src="aavi-logo.png"
-alt="AAVI - Empowering Women to Rise"
->
+            <a href="#about">About</a>
 
-</a>
+            <a href="#opportunities">Opportunities</a>
 
+            <a href="#how-aavi-works">How AAVI Works</a>
 
-<nav>
+            <a href="#services">Services</a>
 
-<a href="#about">About</a>
+            <a href="#register" class="nav-register">
+                Register
+            </a>
 
-<a href="#opportunities">Opportunities</a>
+        </nav>
 
-<a href="#clients">For Clients</a>
-
-<a href="#candidates">For Candidates</a>
-
-<a href="#register" class="nav-button">Register</a>
-
-</nav>
-
-
-</div>
+    </div>
 
 </header>
 
 
 
-<!-- =======================================================
+<!-- =========================
      HERO
-======================================================= -->
+========================= -->
 
 <section class="hero" id="about">
 
+    <div class="container hero-grid">
 
-<div class="container hero-grid">
+        <div>
 
+            <div class="hero-eyebrow">
+                Meaningful work, made more accessible
+            </div>
 
-<div>
+            <h1>
+                Empowering women to find their next chapter at work.
+            </h1>
 
+            <p class="hero-text">
+                AAVI connects talented women with employers who value
+                skills, experience, flexibility and potential.
+            </p>
 
-<div class="eyebrow">
+            <div class="hero-buttons">
 
-WOMEN'S CAREER & TALENT PLATFORM
+                <a href="#candidates"
+                   class="btn btn-primary">
+                    I'm a Candidate
+                </a>
 
-</div>
+                <a href="#clients"
+                   class="btn btn-client">
+                    I'm a Client
+                </a>
 
+            </div>
 
-<h1>
-
-Empowering women to find their next chapter at work.
-
-</h1>
-
-
-<p>
-
-AAVI connects women with meaningful career opportunities
-and helps companies discover talented women professionals.
-
-</p>
-
-
-<div class="buttons">
-
-
-<a
-href="#candidates"
-class="btn btn-primary"
->
-
-I'm a Candidate
-
-</a>
+        </div>
 
 
-<a
-href="#clients"
-class="btn btn-client"
->
+        <!--
+            IMPORTANT:
+            There is NO background,
+            border or shadow around this logo.
+        -->
 
-I'm a Client
+        <div class="hero-card">
 
-</a>
+            <img src="aavi-logo.png"
+                 alt="AAVI - Empowering Women to Rise"
+                 class="hero-logo">
 
+        </div>
 
-</div>
-
-
-</div>
-
-
-
-<!-- HERO LOGO -->
-
-<div class="hero-card">
-
-
-<img
-src="aavi-logo.png"
-alt="AAVI - Empowering Women to Rise"
-class="hero-logo"
->
-
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
 
-<!-- =======================================================
+<!-- =========================
      OPPORTUNITIES
-======================================================= -->
+========================= -->
 
-<section
-class="opportunities"
-id="opportunities"
->
+<section class="section opportunities"
+         id="opportunities">
 
+    <div class="container">
 
-<div class="container">
+        <div class="section-label">
+            Built around women's careers
+        </div>
 
+        <h2>
+            Work opportunities shaped by possibility,
+            not limitation.
+        </h2>
 
-<div class="section-heading">
+        <p class="section-intro">
+            AAVI focuses on creating meaningful career opportunities
+            for women at different stages of their professional journey.
+        </p>
 
 
-<div class="eyebrow">
+        <div class="cards">
 
-BUILT AROUND WOMEN'S CAREERS
 
-</div>
+            <div class="card">
 
+                <div class="card-number">
+                    01
+                </div>
 
-<h2>
+                <h3>
+                    Women's Employment
+                </h3>
 
-Work opportunities shaped by possibility, not limitation.
+                <p>
+                    Connect with companies looking for skilled,
+                    talented and experienced women professionals.
+                </p>
 
-</h2>
+            </div>
 
 
-<p>
+            <div class="card">
 
-Whether you're starting out, returning after a career break,
-or ready for your next move, AAVI is built around your journey.
+                <div class="card-number">
+                    02
+                </div>
 
-</p>
+                <h3>
+                    Return to Work
+                </h3>
 
+                <p>
+                    Discover opportunities for women restarting
+                    their careers after a break.
+                </p>
 
-</div>
+            </div>
 
 
+            <div class="card">
 
-<div class="cards">
+                <div class="card-number">
+                    03
+                </div>
 
+                <h3>
+                    Flexible Work
+                </h3>
 
-<div class="card">
+                <p>
+                    Find remote, hybrid, part-time and flexible
+                    opportunities where available.
+                </p>
 
+            </div>
 
-<div class="card-number">
 
-01
+        </div>
 
-</div>
-
-
-<h3>
-
-Women's Employment
-
-</h3>
-
-
-<p>
-
-Discover career opportunities with companies looking
-to hire talented women professionals.
-
-</p>
-
-
-</div>
-
-
-
-<div class="card">
-
-
-<div class="card-number">
-
-02
-
-</div>
-
-
-<h3>
-
-Return to Work
-
-</h3>
-
-
-<p>
-
-Reconnect with meaningful work after a career break,
-maternity leave, relocation or caregiving.
-
-</p>
-
-
-</div>
-
-
-
-<div class="card">
-
-
-<div class="card-number">
-
-03
-
-</div>
-
-
-<h3>
-
-Flexible Work
-
-</h3>
-
-
-<p>
-
-Find remote, hybrid, part-time and flexible roles
-that better fit your life and career goals.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
 
-<!-- =======================================================
+<!-- =========================
      HOW AAVI WORKS
-======================================================= -->
+========================= -->
 
-<section class="how">
+<section class="section how-aavi"
+         id="how-aavi-works">
 
+    <div class="container">
 
-<div class="container">
+        <div class="section-label">
+            How AAVI works
+        </div>
 
+        <h2>
+            Connecting women and employers.
+        </h2>
 
-<div class="section-heading">
-
-
-<div class="eyebrow">
-
-HOW AAVI WORKS
-
-</div>
-
-
-<h2>
-
-Connecting the right people with the right opportunities.
-
-</h2>
+        <p class="section-intro">
+            AAVI is designed to make the hiring and career journey
+            simpler for both candidates and companies.
+        </p>
 
 
-</div>
+        <div class="audience-grid">
 
 
+            <!-- Candidate -->
 
-<div class="how-grid">
+            <div class="audience-card"
+                 id="candidates">
 
+                <h3>
+                    For Candidates
+                </h3>
 
-<div
-class="how-card"
-id="candidates"
->
+                <p>
+                    Find opportunities that match your skills,
+                    experience and career goals.
+                </p>
 
+                <ul>
 
-<h3>
+                    <li>
+                        Discover relevant job opportunities
+                    </li>
 
-For Candidates
+                    <li>
+                        Explore remote and flexible roles
+                    </li>
 
-</h3>
+                    <li>
+                        Find return-to-work opportunities
+                    </li>
 
+                    <li>
+                        Access career support
+                    </li>
 
-<ul>
+                    <li>
+                        Connect with employers
+                    </li>
 
-<li>✓ Discover relevant job opportunities</li>
+                </ul>
 
-<li>✓ Register your career profile</li>
-
-<li>✓ Explore flexible and remote work</li>
-
-<li>✓ Find return-to-work opportunities</li>
-
-<li>✓ Access career support</li>
-
-<li>✓ Connect with employers</li>
-
-</ul>
-
-
-</div>
-
-
-
-<div
-class="how-card"
-id="clients"
->
+            </div>
 
 
-<h3>
+            <!-- Clients -->
 
-For Clients
+            <div class="audience-card"
+                 id="clients">
 
-</h3>
+                <h3>
+                    For Clients
+                </h3>
+
+                <p>
+                    Connect with women professionals for your
+                    current and future hiring needs.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Post job openings
+                    </li>
+
+                    <li>
+                        Access women talent
+                    </li>
+
+                    <li>
+                        Support diversity hiring
+                    </li>
+
+                    <li>
+                        Hire return-to-work talent
+                    </li>
+
+                    <li>
+                        Explore flexible staffing
+                    </li>
+
+                </ul>
+
+            </div>
 
 
-<ul>
+        </div>
 
-<li>✓ Register your organization</li>
-
-<li>✓ Share your job openings</li>
-
-<li>✓ Reach women professionals</li>
-
-<li>✓ Build diverse talent pipelines</li>
-
-<li>✓ Hire for permanent or contract roles</li>
-
-<li>✓ Access curated women talent</li>
-
-</ul>
-
-
-</div>
-
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
 
-<!-- =======================================================
+<!-- =========================
      SERVICES
-======================================================= -->
+========================= -->
 
-<section class="services">
+<section class="section services"
+         id="services">
 
+    <div class="container">
 
-<div class="container">
+        <div class="section-label">
+            What AAVI offers
+        </div>
 
+        <h2>
+            Recruitment and career solutions.
+        </h2>
 
-<div class="section-heading">
+        <p class="section-intro">
+            AAVI brings together women talent and employers through
+            focused recruitment and career services.
+        </p>
 
 
-<div class="eyebrow">
+        <div class="services-grid">
 
-WHAT AAVI OFFERS
 
-</div>
+            <div class="service">
 
+                <h3>
+                    Women Talent Recruitment
+                </h3>
 
-<h2>
+                <p>
+                    Connect employers with qualified women candidates.
+                </p>
 
-Recruit. Connect. Grow.
+            </div>
 
-</h2>
 
+            <div class="service">
 
-</div>
+                <h3>
+                    Job Posting
+                </h3>
 
+                <p>
+                    Help employers reach targeted women talent.
+                </p>
 
+            </div>
 
-<div class="service-grid">
 
+            <div class="service">
 
-<div class="service">
+                <h3>
+                    Diversity Hiring
+                </h3>
 
-<h3>
+                <p>
+                    Support companies building more diverse teams.
+                </p>
 
-Women Talent
+            </div>
 
-</h3>
 
-<p>
+            <div class="service">
 
-Connect employers with qualified women professionals.
+                <h3>
+                    Returnships
+                </h3>
 
-</p>
+                <p>
+                    Create opportunities for experienced women
+                    returning to work.
+                </p>
 
-</div>
+            </div>
 
 
+            <div class="service">
 
-<div class="service">
+                <h3>
+                    Flexible & Remote Hiring
+                </h3>
 
-<h3>
+                <p>
+                    Connect talent with remote, hybrid and
+                    flexible roles.
+                </p>
 
-Job Posting
+            </div>
 
-</h3>
 
-<p>
+            <div class="service">
 
-Reach a targeted women talent community.
+                <h3>
+                    Contract & Permanent Hiring
+                </h3>
 
-</p>
+                <p>
+                    Support both short-term and permanent hiring needs.
+                </p>
 
-</div>
+            </div>
 
 
+            <div class="service">
 
-<div class="service">
+                <h3>
+                    Leadership Hiring
+                </h3>
 
-<h3>
+                <p>
+                    Help employers identify experienced women
+                    for senior positions.
+                </p>
 
-Diversity Hiring
+            </div>
 
-</h3>
 
-<p>
+            <div class="service">
 
-Build a more diverse and inclusive workforce.
+                <h3>
+                    AI Talent Matching
+                </h3>
 
-</p>
+                <p>
+                    Match candidates and opportunities based on
+                    skills, experience and requirements.
+                </p>
 
-</div>
+            </div>
 
 
+        </div>
 
-<div class="service">
-
-<h3>
-
-Returnships
-
-</h3>
-
-<p>
-
-Reconnect experienced women with the workplace.
-
-</p>
-
-</div>
-
-
-
-<div class="service">
-
-<h3>
-
-Flexible Jobs
-
-</h3>
-
-<p>
-
-Remote, hybrid, part-time and flexible opportunities.
-
-</p>
-
-</div>
-
-
-
-<div class="service">
-
-<h3>
-
-Contract Hiring
-
-</h3>
-
-<p>
-
-Find talent for short-term and project requirements.
-
-</p>
-
-</div>
-
-
-
-<div class="service">
-
-<h3>
-
-Leadership Hiring
-
-</h3>
-
-<p>
-
-Identify experienced women for senior roles.
-
-</p>
-
-</div>
-
-
-
-<div class="service">
-
-<h3>
-
-AI Talent Matching
-
-</h3>
-
-<p>
-
-Match skills, experience and hiring requirements.
-
-</p>
-
-</div>
-
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
 
-<!-- =======================================================
+<!-- =========================
      REGISTRATION
-======================================================= -->
+========================= -->
 
-<section
-class="register"
-id="register"
->
+<section class="section register"
+         id="register">
 
+    <div class="container">
 
-<div class="container">
+        <div class="section-label">
+            Join AAVI
+        </div>
 
+        <h2>
+            Start your journey with AAVI.
+        </h2>
 
-<div class="section-heading">
+        <p class="section-intro">
+            Whether you're looking for your next opportunity
+            or your next hire, register with AAVI.
+        </p>
 
 
-<div class="eyebrow">
+        <div class="forms-grid">
 
-JOIN AAVI
 
-</div>
+            <!-- Candidate Form -->
 
+            <div class="form-card">
 
-<h2>
+                <h3>
+                    Candidate Registration
+                </h3>
 
-Let's start your next chapter.
+                <p>
+                    Tell us about yourself and the kind of
+                    opportunities you're looking for.
+                </p>
 
-</h2>
 
+                <form onsubmit="showSuccess(event, 'candidate-message')">
 
-<p>
+                    <div class="form-group">
 
-Register your interest and we'll be in touch.
+                        <label>
+                            Full Name
+                        </label>
 
-</p>
+                        <input type="text"
+                               required
+                               placeholder="Your full name">
 
+                    </div>
 
-</div>
 
+                    <div class="form-group">
 
+                        <label>
+                            Email
+                        </label>
 
-<div class="form-grid">
+                        <input type="email"
+                               required
+                               placeholder="you@example.com">
 
+                    </div>
 
 
-<!-- CANDIDATE FORM -->
+                    <div class="form-group">
 
-<div class="form-card">
+                        <label>
+                            Phone
+                        </label>
 
+                        <input type="tel"
+                               placeholder="+91">
 
-<h3>
+                    </div>
 
-I'm a Candidate
 
-</h3>
+                    <div class="form-group">
 
+                        <label>
+                            Experience
+                        </label>
 
-<p>
+                        <select>
 
-Looking for your next opportunity?
-Tell us a little about yourself.
+                            <option value="">
+                                Select experience
+                            </option>
 
-</p>
+                            <option>
+                                Fresher
+                            </option>
 
+                            <option>
+                                1–3 years
+                            </option>
 
-<form
-onsubmit="submitForm(event,'candidateMessage')"
->
+                            <option>
+                                3–5 years
+                            </option>
 
+                            <option>
+                                5–10 years
+                            </option>
 
-<div class="form-group">
+                            <option>
+                                10+ years
+                            </option>
 
-<label>
+                        </select>
 
-Full Name
+                    </div>
 
-</label>
 
-<input
-type="text"
-required
->
+                    <div class="form-group">
 
-</div>
+                        <label>
+                            Preferred Work Type
+                        </label>
 
+                        <select>
 
+                            <option value="">
+                                Select preference
+                            </option>
 
-<div class="form-group">
+                            <option>
+                                Full-time
+                            </option>
 
-<label>
+                            <option>
+                                Part-time
+                            </option>
 
-Email
+                            <option>
+                                Remote
+                            </option>
 
-</label>
+                            <option>
+                                Hybrid
+                            </option>
 
-<input
-type="email"
-required
->
+                            <option>
+                                Flexible
+                            </option>
 
-</div>
+                        </select>
 
+                    </div>
 
 
-<div class="form-group">
+                    <div class="form-group">
 
-<label>
+                        <label>
+                            Tell us about your career goals
+                        </label>
 
-Phone
+                        <textarea
+                            placeholder="Tell us what you're looking for...">
+                        </textarea>
 
-</label>
+                    </div>
 
-<input
-type="tel"
->
 
-</div>
+                    <button type="submit"
+                            class="btn btn-primary form-submit">
 
+                        Register as Candidate
 
+                    </button>
 
-<div class="form-group">
 
-<label>
+                    <div id="candidate-message"
+                         class="success-message">
 
-Experience
+                        Thank you! Your registration has been received.
 
-</label>
+                    </div>
 
+                </form>
 
-<select>
+            </div>
 
-<option>Fresher</option>
 
-<option>1–3 years</option>
 
-<option>4–7 years</option>
+            <!-- Client Form -->
 
-<option>8–12 years</option>
+            <div class="form-card">
 
-<option>12+ years</option>
+                <h3>
+                    Client Registration
+                </h3>
 
-</select>
+                <p>
+                    Tell us about your company and your hiring needs.
+                </p>
 
 
-</div>
+                <form onsubmit="showSuccess(event, 'client-message')">
 
+                    <div class="form-group">
 
+                        <label>
+                            Company Name
+                        </label>
 
-<div class="form-group">
+                        <input type="text"
+                               required
+                               placeholder="Company name">
 
-<label>
+                    </div>
 
-Preferred Work Type
 
-</label>
+                    <div class="form-group">
 
+                        <label>
+                            Contact Person
+                        </label>
 
-<select>
+                        <input type="text"
+                               required
+                               placeholder="Your name">
 
-<option>Full-time</option>
+                    </div>
 
-<option>Part-time</option>
 
-<option>Remote</option>
+                    <div class="form-group">
 
-<option>Hybrid</option>
+                        <label>
+                            Work Email
+                        </label>
 
-<option>Flexible</option>
+                        <input type="email"
+                               required
+                               placeholder="name@company.com">
 
-</select>
+                    </div>
 
 
-</div>
+                    <div class="form-group">
 
+                        <label>
+                            Phone
+                        </label>
 
+                        <input type="tel"
+                               placeholder="+91">
 
-<button
-class="form-submit"
-type="submit"
->
+                    </div>
 
-Register as Candidate
 
-</button>
+                    <div class="form-group">
 
+                        <label>
+                            Hiring Requirement
+                        </label>
 
-<p id="candidateMessage"></p>
+                        <select>
 
+                            <option value="">
+                                Select requirement
+                            </option>
 
-</form>
+                            <option>
+                                Permanent Hiring
+                            </option>
 
+                            <option>
+                                Contract Staffing
+                            </option>
 
-</div>
+                            <option>
+                                Remote Hiring
+                            </option>
 
+                            <option>
+                                Diversity Hiring
+                            </option>
 
+                            <option>
+                                Leadership Hiring
+                            </option>
 
-<!-- CLIENT FORM -->
+                            <option>
+                                Campus Hiring
+                            </option>
 
-<div class="form-card">
+                        </select>
 
+                    </div>
 
-<h3>
 
-I'm a Client
+                    <div class="form-group">
 
-</h3>
+                        <label>
+                            Tell us about your requirement
+                        </label>
 
+                        <textarea
+                            placeholder="Tell us about your hiring needs...">
+                        </textarea>
 
-<p>
+                    </div>
 
-Looking to hire talented women?
-Tell us about your hiring needs.
 
-</p>
+                    <button type="submit"
+                            class="btn btn-client form-submit">
 
+                        Register as Client
 
-<form
-onsubmit="submitForm(event,'clientMessage')"
->
+                    </button>
 
 
-<div class="form-group">
+                    <div id="client-message"
+                         class="success-message">
 
-<label>
+                        Thank you! We'll get in touch with you shortly.
 
-Company Name
+                    </div>
 
-</label>
+                </form>
 
-<input
-type="text"
-required
->
+            </div>
 
-</div>
 
+        </div>
 
-
-<div class="form-group">
-
-<label>
-
-Contact Person
-
-</label>
-
-<input
-type="text"
-required
->
-
-</div>
-
-
-
-<div class="form-group">
-
-<label>
-
-Email
-
-</label>
-
-<input
-type="email"
-required
->
-
-</div>
-
-
-
-<div class="form-group">
-
-<label>
-
-Phone
-
-</label>
-
-<input
-type="tel"
->
-
-</div>
-
-
-
-<div class="form-group">
-
-<label>
-
-Hiring Requirement
-
-</label>
-
-
-<textarea
-placeholder="Tell us about the roles you are hiring for"
-></textarea>
-
-
-</div>
-
-
-
-<button
-class="form-submit"
-type="submit"
->
-
-Register as Client
-
-</button>
-
-
-<p id="clientMessage"></p>
-
-
-</form>
-
-
-</div>
-
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
 
-<!-- =======================================================
+<!-- =========================
      CTA
-======================================================= -->
+========================= -->
 
-<section class="cta">
+<section class="section cta">
 
+    <div class="container">
 
-<div class="container">
+        <h2>
+            Let's create more possibilities for women at work.
+        </h2>
 
+        <p>
+            Whether you're restarting, growing or hiring,
+            AAVI is here to help you take the next step.
+        </p>
 
-<h2>
+        <a href="#register"
+           class="btn btn-primary">
 
-Ready to rise?
+            Get Started
 
-</h2>
+        </a>
 
-
-<p>
-
-Whether you're looking for your next opportunity
-or your next great hire, AAVI is here to help.
-
-</p>
-
-
-<div
-class="buttons"
-style="justify-content:center;"
->
-
-
-<a
-href="#candidates"
-class="btn btn-primary"
->
-
-Find Opportunities
-
-</a>
-
-
-<a
-href="#clients"
-class="btn btn-client"
->
-
-Hire Women Talent
-
-</a>
-
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
 
-<!-- =======================================================
+<!-- =========================
      FOOTER
-======================================================= -->
+========================= -->
 
 <footer>
 
+    <div class="container">
 
-<div class="container">
-
-
-<div class="footer-grid">
+        <div class="footer-grid">
 
 
-<div>
+            <div>
+
+                <div class="footer-logo">
+
+                    <img src="aavi-logo.png"
+                         alt="AAVI">
+
+                </div>
+
+                <p class="footer-tagline">
+                    Empowering Women to Rise.
+                </p>
+
+            </div>
 
 
-<img
-src="aavi-logo.png"
-alt="AAVI"
-class="footer-logo-image"
->
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#opportunities">
+                    Opportunities
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+            </div>
 
 
-<div class="footer-tagline">
+            <div class="footer-column">
 
-Empowering Women to Rise
+                <h4>
+                    Join AAVI
+                </h4>
 
-</div>
+                <a href="#candidates">
+                    Candidates
+                </a>
 
+                <a href="#clients">
+                    Employers
+                </a>
 
-</div>
+                <a href="#register">
+                    Register
+                </a>
 
-
-
-<div class="footer-links">
-
-
-<a href="#about">
-
-About
-
-</a>
-
-
-<a href="#opportunities">
-
-Opportunities
-
-</a>
+            </div>
 
 
-<a href="#candidates">
-
-Candidates
-
-</a>
+        </div>
 
 
-<a href="#clients">
+        <div class="footer-bottom">
 
-Clients
+            © 2026 AAVI. All rights reserved.
 
-</a>
+        </div>
 
-
-<a href="#register">
-
-Register
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-<div class="copyright">
-
-© 2026 AAVI. All rights reserved.
-
-</div>
-
-
-</div>
+    </div>
 
 </footer>
 
 
 
-<!-- =======================================================
-     SIMPLE FORM MESSAGE
-======================================================= -->
+<!-- =========================
+     JAVASCRIPT
+========================= -->
 
 <script>
 
-function submitForm(event, messageId) {
+function showSuccess(event, messageId) {
 
     event.preventDefault();
 
     const message =
         document.getElementById(messageId);
 
-    message.innerHTML =
-        "Thank you! Your information has been received. We'll be in touch soon.";
-
-    message.style.color =
-        "#51087E";
-
-    message.style.fontWeight =
-        "600";
-
-    message.style.marginTop =
-        "15px";
+    message.style.display = "block";
 
     event.target.reset();
+
+    message.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
 
 }
 
@@ -2010,5 +1620,4 @@ function submitForm(event, messageId) {
 
 
 </body>
-
 </html>
