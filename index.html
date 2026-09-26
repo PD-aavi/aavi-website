@@ -10,10 +10,6 @@
 
 <style>
 
-/* =========================
-   AAVI BRAND COLORS
-========================= */
-
 :root {
     --purple: #51087E;
     --purple-dark: #35104D;
@@ -25,11 +21,6 @@
     --muted: #6D6572;
     --border: #E6DDEB;
 }
-
-
-/* =========================
-   RESET
-========================= */
 
 * {
     margin: 0;
@@ -62,10 +53,8 @@ a {
     margin: 0 auto;
 }
 
-
 /* =========================
    HEADER
-   SINGLE LOGO TOP LEFT
 ========================= */
 
 header {
@@ -77,27 +66,31 @@ header {
 }
 
 .navbar {
-    min-height: 82px;
+    min-height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
 }
 
+/* TOP-LEFT AAVI LOGO */
 .header-logo {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .header-logo img {
-    width: 95px;
+    width: 150px;
     height: auto;
     display: block;
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
 }
+
+/* NAVIGATION */
 
 .nav-links {
     display: flex;
@@ -121,9 +114,8 @@ header {
 
 .nav-register:hover {
     background: var(--purple-dark);
-    color: var(--white);
+    color: var(--white) !important;
 }
-
 
 /* =========================
    HERO
@@ -131,14 +123,11 @@ header {
 
 .hero {
     background: var(--white);
-    padding: 75px 0 85px;
+    padding: 70px 0 80px;
 }
 
 .hero-content {
-    width: 100%;
-    max-width: 1050px;
-    margin: 0 auto;
-    text-align: left;
+    max-width: 1100px;
 }
 
 .hero-eyebrow {
@@ -153,89 +142,83 @@ header {
 .hero h1 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(42px, 5vw, 66px);
-    line-height: 1.07;
+    line-height: 1.05;
     color: var(--purple-dark);
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     font-weight: 600;
-    max-width: 1000px;
+    max-width: 950px;
 }
 
 .hero-text {
     font-size: 18px;
     color: var(--muted);
-    max-width: 800px;
-    margin-bottom: 42px;
+    max-width: 760px;
+    margin-bottom: 45px;
 }
-
 
 /* =========================
-   JOIN AAVI
+   JOIN AAVI IN HERO
 ========================= */
 
-.join-aavi {
-    margin-top: 10px;
+.hero-register {
+    margin-top: 20px;
 }
 
-.join-aavi-label {
+.hero-register .section-label {
     color: var(--purple);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 13px;
-    margin-bottom: 10px;
-}
-
-.join-aavi h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    color: var(--purple-dark);
-    font-size: clamp(34px, 4vw, 48px);
-    line-height: 1.1;
     margin-bottom: 12px;
 }
 
-.join-aavi-intro {
-    color: var(--muted);
-    font-size: 17px;
-    max-width: 700px;
-    margin-bottom: 30px;
+.hero-register h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--purple-dark);
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    margin-bottom: 15px;
 }
 
+.hero-register-intro {
+    color: var(--muted);
+    font-size: 17px;
+    max-width: 680px;
+    margin-bottom: 32px;
+}
 
-/* =========================
-   REGISTRATION CARDS
-========================= */
-
-.registration-grid {
+.forms-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
-.registration-card {
-    background: var(--purple-soft);
-    border: 1px solid var(--border);
+.form-card {
+    background: var(--white);
     border-radius: 20px;
-    padding: 30px;
+    padding: 32px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 25px rgba(81, 8, 126, 0.07);
 }
 
-.registration-card h3 {
+.form-card h3 {
     font-family: Georgia, "Times New Roman", serif;
-    color: var(--purple-dark);
     font-size: 28px;
+    color: var(--purple-dark);
     margin-bottom: 10px;
 }
 
-.registration-card p {
+.form-card > p {
     color: var(--muted);
     margin-bottom: 24px;
-    font-size: 15px;
 }
 
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 13px 25px;
+    padding: 14px 26px;
     border-radius: 30px;
     font-weight: 700;
     border: none;
@@ -263,6 +246,10 @@ header {
     transform: translateY(-2px);
 }
 
+.form-submit {
+    width: 100%;
+    text-align: center;
+}
 
 /* =========================
    SECTION HEADINGS
@@ -294,7 +281,6 @@ header {
     color: var(--muted);
     font-size: 18px;
 }
-
 
 /* =========================
    OPPORTUNITIES
@@ -335,7 +321,6 @@ header {
 .card p {
     color: var(--muted);
 }
-
 
 /* =========================
    HOW AAVI WORKS
@@ -393,7 +378,6 @@ header {
     margin-bottom: 8px;
 }
 
-
 /* =========================
    SERVICES
 ========================= */
@@ -427,7 +411,6 @@ header {
     font-size: 14px;
 }
 
-
 /* =========================
    CTA
 ========================= */
@@ -447,7 +430,6 @@ header {
     margin: 0 auto 28px;
     color: var(--muted);
 }
-
 
 /* =========================
    FOOTER
@@ -508,27 +490,31 @@ footer {
     font-size: 13px;
 }
 
-
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 900px) {
 
+    .navbar {
+        min-height: 85px;
+    }
+
+    .header-logo img {
+        width: 140px;
+    }
+
     .nav-links {
-        display: none;
+        gap: 16px;
+        font-size: 14px;
     }
 
     .hero {
-        padding: 60px 0 70px;
+        padding: 55px 0 65px;
     }
 
     .hero h1 {
         font-size: 48px;
-    }
-
-    .registration-grid {
-        grid-template-columns: 1fr;
     }
 
     .cards {
@@ -539,7 +525,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .audience-grid {
+    .forms-grid {
         grid-template-columns: 1fr;
     }
 
@@ -548,7 +534,6 @@ footer {
     }
 }
 
-
 /* =========================
    MOBILE
 ========================= */
@@ -556,19 +541,28 @@ footer {
 @media (max-width: 600px) {
 
     .navbar {
-        min-height: 72px;
+        min-height: 75px;
     }
 
+    /* Larger mobile logo */
     .header-logo img {
-        width: 78px;
+        width: 125px;
     }
 
-    .nav-register {
+    .nav-links {
         display: none;
     }
 
     .hero {
         padding: 45px 0 55px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-eyebrow {
+        font-size: 12px;
     }
 
     .hero h1 {
@@ -580,20 +574,20 @@ footer {
         margin-bottom: 35px;
     }
 
-    .join-aavi h2 {
-        font-size: 35px;
+    .hero-register h2 {
+        font-size: 36px;
     }
 
-    .registration-card {
+    .hero-register-intro {
+        font-size: 16px;
+    }
+
+    .forms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
         padding: 25px;
-    }
-
-    .registration-card h3 {
-        font-size: 25px;
-    }
-
-    .registration-card .btn {
-        width: 100%;
     }
 
     .section {
@@ -601,6 +595,10 @@ footer {
     }
 
     .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-grid {
         grid-template-columns: 1fr;
     }
 
@@ -617,26 +615,19 @@ footer {
 </style>
 </head>
 
-
 <body>
-
 
 <!-- =========================
      HEADER
-     SINGLE AAVI LOGO
 ========================= -->
 
 <header>
-
     <div class="container navbar">
 
+        <!-- AAVI LOGO -->
         <a href="#about" class="header-logo">
-
-            <img src="aavi-logo.png"
-                 alt="AAVI">
-
+            <img src="aavi-logo.png" alt="AAVI">
         </a>
-
 
         <nav class="nav-links">
 
@@ -656,114 +647,76 @@ footer {
                 Services
             </a>
 
-            <a href="#register"
-               class="nav-register">
-
+            <a href="#register" class="nav-register">
                 Register
-
             </a>
 
         </nav>
 
     </div>
-
 </header>
-
 
 
 <!-- =========================
      HERO
 ========================= -->
 
-<section class="hero"
-         id="about">
+<section class="hero" id="about">
 
     <div class="container">
 
         <div class="hero-content">
 
-
             <div class="hero-eyebrow">
-
                 Meaningful work, made more accessible
-
             </div>
 
-
             <h1>
-
                 Empowering women to find their next chapter at work.
-
             </h1>
 
-
             <p class="hero-text">
-
                 AAVI connects talented women with employers who value
                 skills, experience, flexibility and potential.
-
             </p>
 
 
+            <!-- JOIN AAVI -->
 
-            <!-- =========================
-                 JOIN AAVI
-            ========================= -->
+            <div class="hero-register" id="register">
 
-            <div class="join-aavi"
-                 id="register">
-
-
-                <div class="join-aavi-label">
-
+                <div class="section-label">
                     Join AAVI
-
                 </div>
 
-
                 <h2>
-
                     Start your journey with AAVI.
-
                 </h2>
 
-
-                <p class="join-aavi-intro">
-
+                <p class="hero-register-intro">
                     Whether you're looking for your next opportunity
                     or your next hire, register with AAVI.
-
                 </p>
 
 
+                <div class="forms-grid">
 
-                <div class="registration-grid">
+                    <!-- CANDIDATE -->
 
-
-                    <!-- =========================
-                         CANDIDATE REGISTRATION
-                    ========================= -->
-
-                    <div class="registration-card">
+                    <div class="form-card">
 
                         <h3>
-
                             Candidate Registration
-
                         </h3>
 
-
                         <p>
-
-                            Register with AAVI and join our women
-                            talent network. Tell us about your skills,
-                            experience and career goals.
-
+                            Register with AAVI and join our women talent
+                            network. Tell us about your skills, experience
+                            and career goals.
                         </p>
 
-
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSchcEmnnjAbIYZv9PKBXxVREQuPG4-FGRl2g2vfXHn7iRZ2Ng/viewform"
-                           class="btn btn-primary"
+                           class="btn btn-primary form-submit"
                            target="_blank"
                            rel="noopener noreferrer">
 
@@ -774,31 +727,21 @@ footer {
                     </div>
 
 
+                    <!-- EMPLOYER -->
 
-                    <!-- =========================
-                         EMPLOYER REGISTRATION
-                    ========================= -->
-
-                    <div class="registration-card">
+                    <div class="form-card">
 
                         <h3>
-
                             Employer Registration
-
                         </h3>
 
-
                         <p>
-
-                            Register your company with AAVI and tell
-                            us about your current and future hiring
-                            requirements.
-
+                            Register your company with AAVI and tell us
+                            about your current and future hiring requirements.
                         </p>
 
-
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-Ni_XlfHEPpFGjr0yh8wwvpTU_lxfBQgit_7T2DhzSW2PGQ/viewform"
-                           class="btn btn-client"
+                           class="btn btn-client form-submit"
                            target="_blank"
                            rel="noopener noreferrer">
 
@@ -808,7 +751,6 @@ footer {
 
                     </div>
 
-
                 </div>
 
             </div>
@@ -818,124 +760,85 @@ footer {
     </div>
 
 </section>
-
 
 
 <!-- =========================
      OPPORTUNITIES
 ========================= -->
 
-<section class="section opportunities"
-         id="opportunities">
+<section class="section opportunities" id="opportunities">
 
     <div class="container">
 
         <div class="section-label">
-
             Built around women's careers
-
         </div>
 
-
         <h2>
-
             Work opportunities shaped by possibility,
             not limitation.
-
         </h2>
 
-
         <p class="section-intro">
-
             AAVI focuses on creating meaningful career opportunities
             for women at different stages of their professional journey.
-
         </p>
-
 
 
         <div class="cards">
 
-
             <div class="card">
 
                 <div class="card-number">
-
                     01
-
                 </div>
 
-
                 <h3>
-
                     Women's Employment
-
                 </h3>
 
-
                 <p>
-
                     Connect with companies looking for skilled,
                     talented and experienced women professionals.
-
                 </p>
 
             </div>
 
 
-
             <div class="card">
 
                 <div class="card-number">
-
                     02
-
                 </div>
 
-
                 <h3>
-
                     Return to Work
-
                 </h3>
 
-
                 <p>
-
                     Discover opportunities for women restarting
                     their careers after a break.
-
                 </p>
 
             </div>
-
 
 
             <div class="card">
 
                 <div class="card-number">
-
                     03
-
                 </div>
 
-
                 <h3>
-
                     Flexible Work
-
                 </h3>
 
-
                 <p>
-
                     Find remote, hybrid, part-time and flexible
                     opportunities where available.
-
                 </p>
 
             </div>
-
 
         </div>
 
@@ -944,37 +847,26 @@ footer {
 </section>
 
 
-
 <!-- =========================
      HOW AAVI WORKS
 ========================= -->
 
-<section class="section how-aavi"
-         id="how-aavi-works">
+<section class="section how-aavi" id="how-aavi-works">
 
     <div class="container">
 
         <div class="section-label">
-
             How AAVI works
-
         </div>
 
-
         <h2>
-
             Connecting women and employers.
-
         </h2>
 
-
         <p class="section-intro">
-
             AAVI is designed to make the hiring and career journey
             simpler for both candidates and companies.
-
         </p>
-
 
 
         <div class="audience-grid">
@@ -982,23 +874,16 @@ footer {
 
             <!-- CANDIDATES -->
 
-            <div class="audience-card"
-                 id="candidates">
+            <div class="audience-card" id="candidates">
 
                 <h3>
-
                     For Candidates
-
                 </h3>
 
-
                 <p>
-
                     Find opportunities that match your skills,
                     experience and career goals.
-
                 </p>
-
 
                 <ul>
 
@@ -1015,4 +900,303 @@ footer {
                     </li>
 
                     <li>
-```
+                        Access career support
+                    </li>
+
+                    <li>
+                        Connect with employers
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- EMPLOYERS -->
+
+            <div class="audience-card" id="clients">
+
+                <h3>
+                    For Employers
+                </h3>
+
+                <p>
+                    Connect with women professionals for your
+                    current and future hiring needs.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Post job openings
+                    </li>
+
+                    <li>
+                        Access women talent
+                    </li>
+
+                    <li>
+                        Support diversity hiring
+                    </li>
+
+                    <li>
+                        Hire return-to-work talent
+                    </li>
+
+                    <li>
+                        Explore flexible staffing
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section services" id="services">
+
+    <div class="container">
+
+        <div class="section-label">
+            What AAVI offers
+        </div>
+
+        <h2>
+            Recruitment and career solutions.
+        </h2>
+
+        <p class="section-intro">
+            AAVI brings together women talent and employers through
+            focused recruitment and career services.
+        </p>
+
+
+        <div class="services-grid">
+
+
+            <div class="service">
+
+                <h3>
+                    Women Talent Recruitment
+                </h3>
+
+                <p>
+                    Connect employers with qualified women candidates.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    Job Posting
+                </h3>
+
+                <p>
+                    Help employers reach targeted women talent.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    Diversity Hiring
+                </h3>
+
+                <p>
+                    Support companies building more diverse teams.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    Returnships
+                </h3>
+
+                <p>
+                    Create opportunities for experienced women
+                    returning to work.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    Flexible & Remote Hiring
+                </h3>
+
+                <p>
+                    Connect talent with remote, hybrid and flexible roles.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    Contract & Permanent Hiring
+                </h3>
+
+                <p>
+                    Support both short-term and permanent hiring needs.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    Leadership Hiring
+                </h3>
+
+                <p>
+                    Help employers identify experienced women
+                    for senior positions.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    AI Talent Matching
+                </h3>
+
+                <p>
+                    Match candidates and opportunities based on
+                    skills, experience and requirements.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="section cta">
+
+    <div class="container">
+
+        <h2>
+            Let's create more possibilities for women at work.
+        </h2>
+
+        <p>
+            Whether you're restarting, growing or hiring,
+            AAVI is here to help you take the next step.
+        </p>
+
+        <a href="#register" class="btn btn-primary">
+            Get Started
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <div class="footer-brand-name">
+                    AAVI
+                </div>
+
+                <p class="footer-tagline">
+                    Empowering Women to Rise.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#opportunities">
+                    Opportunities
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Join AAVI
+                </h4>
+
+                <a href="#candidates">
+                    Candidates
+                </a>
+
+                <a href="#clients">
+                    Employers
+                </a>
+
+                <a href="#register">
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            © 2026 AAVI. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
