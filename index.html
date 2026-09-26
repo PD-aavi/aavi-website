@@ -53,9 +53,10 @@ a {
     margin: 0 auto;
 }
 
-/* =========================
+
+/* ================================
    HEADER
-========================= */
+================================ */
 
 header {
     background: var(--white);
@@ -73,7 +74,8 @@ header {
     gap: 30px;
 }
 
-/* TOP-LEFT AAVI LOGO */
+/* AAVI LOGO */
+
 .header-logo {
     display: flex;
     align-items: center;
@@ -89,6 +91,7 @@ header {
     box-shadow: none;
     background: transparent;
 }
+
 
 /* NAVIGATION */
 
@@ -114,12 +117,13 @@ header {
 
 .nav-register:hover {
     background: var(--purple-dark);
-    color: var(--white) !important;
+    color: var(--white);
 }
 
-/* =========================
+
+/* ================================
    HERO
-========================= */
+================================ */
 
 .hero {
     background: var(--white);
@@ -141,7 +145,7 @@ header {
 
 .hero h1 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(42px, 5vw, 66px);
+    font-size: clamp(42px, 4.5vw, 64px);
     line-height: 1.05;
     color: var(--purple-dark);
     margin-bottom: 22px;
@@ -150,15 +154,16 @@ header {
 }
 
 .hero-text {
-    font-size: 18px;
+    font-size: 17px;
     color: var(--muted);
     max-width: 760px;
     margin-bottom: 45px;
 }
 
-/* =========================
-   JOIN AAVI IN HERO
-========================= */
+
+/* ================================
+   JOIN AAVI
+================================ */
 
 .hero-register {
     margin-top: 20px;
@@ -176,43 +181,49 @@ header {
 .hero-register h2 {
     font-family: Georgia, "Times New Roman", serif;
     color: var(--purple-dark);
-    font-size: clamp(32px, 4vw, 48px);
+    font-size: clamp(34px, 4vw, 50px);
     line-height: 1.1;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .hero-register-intro {
-    color: var(--muted);
-    font-size: 17px;
     max-width: 680px;
-    margin-bottom: 32px;
+    color: var(--muted);
+    font-size: 18px;
+    margin-bottom: 35px;
 }
+
+
+/* REGISTRATION CARDS */
 
 .forms-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 30px;
 }
 
 .form-card {
     background: var(--white);
     border-radius: 20px;
-    padding: 32px;
+    padding: 35px;
     border: 1px solid var(--border);
     box-shadow: 0 8px 25px rgba(81, 8, 126, 0.07);
 }
 
 .form-card h3 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 28px;
+    font-size: 30px;
     color: var(--purple-dark);
     margin-bottom: 10px;
 }
 
 .form-card > p {
     color: var(--muted);
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
+
+
+/* BUTTONS */
 
 .btn {
     display: inline-flex;
@@ -251,9 +262,10 @@ header {
     text-align: center;
 }
 
-/* =========================
+
+/* ================================
    SECTION HEADINGS
-========================= */
+================================ */
 
 .section {
     padding: 90px 0;
@@ -282,9 +294,10 @@ header {
     font-size: 18px;
 }
 
-/* =========================
+
+/* ================================
    OPPORTUNITIES
-========================= */
+================================ */
 
 .opportunities {
     background: var(--cream);
@@ -322,9 +335,10 @@ header {
     color: var(--muted);
 }
 
-/* =========================
+
+/* ================================
    HOW AAVI WORKS
-========================= */
+================================ */
 
 .how-aavi {
     background: var(--purple);
@@ -378,9 +392,10 @@ header {
     margin-bottom: 8px;
 }
 
-/* =========================
+
+/* ================================
    SERVICES
-========================= */
+================================ */
 
 .services {
     background: var(--white);
@@ -411,9 +426,10 @@ header {
     font-size: 14px;
 }
 
-/* =========================
+
+/* ================================
    CTA
-========================= */
+================================ */
 
 .cta {
     background: var(--cream);
@@ -431,9 +447,10 @@ header {
     color: var(--muted);
 }
 
-/* =========================
+
+/* ================================
    FOOTER
-========================= */
+================================ */
 
 footer {
     background: var(--purple-dark);
@@ -490,9 +507,10 @@ footer {
     font-size: 13px;
 }
 
-/* =========================
+
+/* ================================
    TABLET
-========================= */
+================================ */
 
 @media (max-width: 900px) {
 
@@ -514,7 +532,7 @@ footer {
     }
 
     .hero h1 {
-        font-size: 48px;
+        font-size: 46px;
     }
 
     .cards {
@@ -534,9 +552,10 @@ footer {
     }
 }
 
-/* =========================
+
+/* ================================
    MOBILE
-========================= */
+================================ */
 
 @media (max-width: 600px) {
 
@@ -544,7 +563,6 @@ footer {
         min-height: 75px;
     }
 
-    /* Larger mobile logo */
     .header-logo img {
         width: 125px;
     }
@@ -555,10 +573,6 @@ footer {
 
     .hero {
         padding: 45px 0 55px;
-    }
-
-    .hero-content {
-        max-width: 100%;
     }
 
     .hero-eyebrow {
@@ -617,14 +631,15 @@ footer {
 
 <body>
 
-<!-- =========================
+
+<!-- ================================
      HEADER
-========================= -->
+================================ -->
 
 <header>
+
     <div class="container navbar">
 
-        <!-- AAVI LOGO -->
         <a href="#about" class="header-logo">
             <img src="aavi-logo.png" alt="AAVI">
         </a>
@@ -654,12 +669,13 @@ footer {
         </nav>
 
     </div>
+
 </header>
 
 
-<!-- =========================
+<!-- ================================
      HERO
-========================= -->
+================================ -->
 
 <section class="hero" id="about">
 
@@ -701,7 +717,8 @@ footer {
 
                 <div class="forms-grid">
 
-                    <!-- CANDIDATE -->
+
+                    <!-- CANDIDATE REGISTRATION -->
 
                     <div class="form-card">
 
@@ -710,24 +727,23 @@ footer {
                         </h3>
 
                         <p>
-                            Register with AAVI and join our women talent
-                            network. Tell us about your skills, experience
-                            and career goals.
+                            Register with AAVI and join our women talent network.
+                            Tell us about your skills, experience and career goals.
                         </p>
 
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSchcEmnnjAbIYZv9PKBXxVREQuPG4-FGRl2g2vfXHn7iRZ2Ng/viewform"
-                           class="btn btn-primary form-submit"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSchcEmnnjAbIYZv9PKBXxVREQuPG4-FGRl2g2vfXHn7iRZ2Ng/viewform"
+                            class="btn btn-primary form-submit"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Register as Candidate
-
                         </a>
 
                     </div>
 
 
-                    <!-- EMPLOYER -->
+                    <!-- EMPLOYER REGISTRATION -->
 
                     <div class="form-card">
 
@@ -736,17 +752,17 @@ footer {
                         </h3>
 
                         <p>
-                            Register your company with AAVI and tell us
-                            about your current and future hiring requirements.
+                            Register your company with AAVI and tell us about
+                            your current and future hiring requirements.
                         </p>
 
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-Ni_XlfHEPpFGjr0yh8wwvpTU_lxfBQgit_7T2DhzSW2PGQ/viewform"
-                           class="btn btn-client form-submit"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSe-Ni_XlfHEPpFGjr0yh8wwvpTU_lxfBQgit_7T2DhzSW2PGQ/viewform"
+                            class="btn btn-client form-submit"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Register as Employer
-
                         </a>
 
                     </div>
@@ -762,9 +778,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- ================================
      OPPORTUNITIES
-========================= -->
+================================ -->
 
 <section class="section opportunities" id="opportunities">
 
@@ -786,6 +802,7 @@ footer {
 
 
         <div class="cards">
+
 
             <div class="card">
 
@@ -840,6 +857,7 @@ footer {
 
             </div>
 
+
         </div>
 
     </div>
@@ -847,9 +865,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- ================================
      HOW AAVI WORKS
-========================= -->
+================================ -->
 
 <section class="section how-aavi" id="how-aavi-works">
 
@@ -951,6 +969,7 @@ footer {
 
             </div>
 
+
         </div>
 
     </div>
@@ -958,9 +977,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- ================================
      SERVICES
-========================= -->
+================================ -->
 
 <section class="section services" id="services">
 
@@ -1089,6 +1108,7 @@ footer {
 
             </div>
 
+
         </div>
 
     </div>
@@ -1096,9 +1116,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- ================================
      CTA
-========================= -->
+================================ -->
 
 <section class="section cta">
 
@@ -1113,7 +1133,10 @@ footer {
             AAVI is here to help you take the next step.
         </p>
 
-        <a href="#register" class="btn btn-primary">
+        <a
+            href="#register"
+            class="btn btn-primary"
+        >
             Get Started
         </a>
 
@@ -1122,9 +1145,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- ================================
      FOOTER
-========================= -->
+================================ -->
 
 <footer>
 
@@ -1187,6 +1210,7 @@ footer {
 
             </div>
 
+
         </div>
 
 
@@ -1197,6 +1221,7 @@ footer {
     </div>
 
 </footer>
+
 
 </body>
 </html>
