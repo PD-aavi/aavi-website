@@ -426,42 +426,6 @@ header {
     margin-bottom: 25px;
 }
 
-.form-group {
-    margin-bottom: 17px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 7px;
-    color: var(--purple-dark);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 13px 14px;
-    border: 1px solid var(--border);
-    border-radius: 9px;
-    font-family: inherit;
-    font-size: 15px;
-    background: var(--white);
-}
-
-.form-group textarea {
-    min-height: 100px;
-    resize: vertical;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: 2px solid var(--purple-soft);
-    border-color: var(--purple);
-}
-
 .form-submit {
     width: 100%;
     margin-top: 5px;
@@ -547,21 +511,6 @@ footer {
     padding-top: 20px;
     color: #CDBBD7;
     font-size: 13px;
-}
-
-
-/* =========================
-   SUCCESS MESSAGE
-========================= */
-
-.success-message {
-    display: none;
-    background: #F1E8F6;
-    color: var(--purple-dark);
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
-    font-weight: 600;
 }
 
 
@@ -766,14 +715,18 @@ footer {
 
             <div class="hero-buttons">
 
-                <a href="#candidates"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSchcEmnnjAbIYZv9PKBXxVREQuPG4-FGRl2g2vfXHn7iRZ2Ng/viewform?usp=dialog"
+                   target="_blank"
+                   rel="noopener noreferrer"
                    class="btn btn-primary">
                     I'm a Candidate
                 </a>
 
-                <a href="#clients"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-Ni_XlfHEPpFGjr0yh8wwvpTU_lxfBQgit_7T2DhzSW2PGQ/viewform?usp=dialog"
+                   target="_blank"
+                   rel="noopener noreferrer"
                    class="btn btn-client">
-                    I'm a Client
+                    I'm an Employer
                 </a>
 
             </div>
@@ -959,7 +912,7 @@ footer {
                  id="clients">
 
                 <h3>
-                    For Clients
+                    For Employers
                 </h3>
 
                 <p>
@@ -1169,8 +1122,7 @@ footer {
 
         <div class="forms-grid">
 
-
-            <!-- Candidate Form -->
+            <!-- Candidate Registration -->
 
             <div class="form-card">
 
@@ -1179,298 +1131,41 @@ footer {
                 </h3>
 
                 <p>
-                    Tell us about yourself and the kind of
-                    opportunities you're looking for.
+                    Register with AAVI and join our talent network.
+                    Tell us about your experience, skills and the opportunities you're looking for.
                 </p>
 
-
-                <form onsubmit="showSuccess(event, 'candidate-message')">
-
-                    <div class="form-group">
-
-                        <label>
-                            Full Name
-                        </label>
-
-                        <input type="text"
-                               required
-                               placeholder="Your full name">
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Email
-                        </label>
-
-                        <input type="email"
-                               required
-                               placeholder="you@example.com">
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Phone
-                        </label>
-
-                        <input type="tel"
-                               placeholder="+91">
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Experience
-                        </label>
-
-                        <select>
-
-                            <option value="">
-                                Select experience
-                            </option>
-
-                            <option>
-                                Fresher
-                            </option>
-
-                            <option>
-                                1–3 years
-                            </option>
-
-                            <option>
-                                3–5 years
-                            </option>
-
-                            <option>
-                                5–10 years
-                            </option>
-
-                            <option>
-                                10+ years
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Preferred Work Type
-                        </label>
-
-                        <select>
-
-                            <option value="">
-                                Select preference
-                            </option>
-
-                            <option>
-                                Full-time
-                            </option>
-
-                            <option>
-                                Part-time
-                            </option>
-
-                            <option>
-                                Remote
-                            </option>
-
-                            <option>
-                                Hybrid
-                            </option>
-
-                            <option>
-                                Flexible
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Tell us about your career goals
-                        </label>
-
-                        <textarea
-                            placeholder="Tell us what you're looking for...">
-                        </textarea>
-
-                    </div>
-
-
-                    <button type="submit"
-                            class="btn btn-primary form-submit">
-
-                        Register as Candidate
-
-                    </button>
-
-
-                    <div id="candidate-message"
-                         class="success-message">
-
-                        Thank you! Your registration has been received.
-
-                    </div>
-
-                </form>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSchcEmnnjAbIYZv9PKBXxVREQuPG4-FGRl2g2vfXHn7iRZ2Ng/viewform?usp=dialog"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-primary form-submit">
+                    Register as Candidate
+                </a>
 
             </div>
 
 
-
-            <!-- Client Form -->
+            <!-- Employer Registration -->
 
             <div class="form-card">
 
                 <h3>
-                    Client Registration
+                    Employer Registration
                 </h3>
 
                 <p>
-                    Tell us about your company and your hiring needs.
+                    Tell us about your company and hiring needs.
+                    Register with AAVI to connect with women talent.
                 </p>
 
-
-                <form onsubmit="showSuccess(event, 'client-message')">
-
-                    <div class="form-group">
-
-                        <label>
-                            Company Name
-                        </label>
-
-                        <input type="text"
-                               required
-                               placeholder="Company name">
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Contact Person
-                        </label>
-
-                        <input type="text"
-                               required
-                               placeholder="Your name">
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Work Email
-                        </label>
-
-                        <input type="email"
-                               required
-                               placeholder="name@company.com">
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Phone
-                        </label>
-
-                        <input type="tel"
-                               placeholder="+91">
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Hiring Requirement
-                        </label>
-
-                        <select>
-
-                            <option value="">
-                                Select requirement
-                            </option>
-
-                            <option>
-                                Permanent Hiring
-                            </option>
-
-                            <option>
-                                Contract Staffing
-                            </option>
-
-                            <option>
-                                Remote Hiring
-                            </option>
-
-                            <option>
-                                Diversity Hiring
-                            </option>
-
-                            <option>
-                                Leadership Hiring
-                            </option>
-
-                            <option>
-                                Campus Hiring
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Tell us about your requirement
-                        </label>
-
-                        <textarea
-                            placeholder="Tell us about your hiring needs...">
-                        </textarea>
-
-                    </div>
-
-
-                    <button type="submit"
-                            class="btn btn-client form-submit">
-
-                        Register as Client
-
-                    </button>
-
-
-                    <div id="client-message"
-                         class="success-message">
-
-                        Thank you! We'll get in touch with you shortly.
-
-                    </div>
-
-                </form>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-Ni_XlfHEPpFGjr0yh8wwvpTU_lxfBQgit_7T2DhzSW2PGQ/viewform?usp=dialog"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-client form-submit">
+                    Register as Employer
+                </a>
 
             </div>
-
 
         </div>
 
@@ -1590,34 +1285,6 @@ footer {
     </div>
 
 </footer>
-
-
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
-
-<script>
-
-function showSuccess(event, messageId) {
-
-    event.preventDefault();
-
-    const message =
-        document.getElementById(messageId);
-
-    message.style.display = "block";
-
-    event.target.reset();
-
-    message.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-    });
-
-}
-
-</script>
 
 
 </body>
